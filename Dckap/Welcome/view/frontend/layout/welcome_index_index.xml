@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../../../lib/internal/Magento/Framework/View/Layout/etc/page_configuration.xsd" layout="1column">
+    <head>
+        <title>Welcome to Magento World</title>
+    </head>
+    <body>
+        <referenceContainer name="content">
+            <block name="welcome" template="welcome.phtml" class="Dckap\Welcome\Block\Welcome">
+			<block name="hello" template="hello.phtml" class="Dckap\Welcome\Block\Hello"/>
+            </block>
+        </referenceContainer>
+    </body>
+</page>

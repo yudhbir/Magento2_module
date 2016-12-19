@@ -1,0 +1,20 @@
+<strike> Magento 1</strike> Magento 2 Hello
+<h1> Welcome to Magento 2 Hello</h2>
+<?php echo 'This is the Simple Welcome Module in Magento 2.0';?>
+<p id="test"></p>
+<script>
+ require(['jquery', 'jquery/ui'], function($){ 
+    $(document).ready(function(){		
+		 $.ajax({
+				// showLoader: true,
+				url: '<?php echo $this->getUrl('welcome/ajax/ajax')?>',				
+				type: "POST",
+				
+			}).done(function (data) {
+				// $('#test').removeClass('hideme');
+				// var html = template('#test', {posts:data}); 
+				$('#test').html(data);
+			});
+	});
+ });
+</script>
